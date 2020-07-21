@@ -26,7 +26,6 @@ test-wasm: dist $(OPUS_DECODE_TEST_FILE)
 clean: dist-clean wasmlib-clean configures-clean
 
 dist: wasm wasm-esm
-	@ cp src/test-opus-stream-decoder* dist
 dist-clean:
 	rm -rf dist/*
 
